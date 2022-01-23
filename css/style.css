@@ -8,7 +8,7 @@
     box-sizing: border-box;
     border:none; outline: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -117,6 +117,9 @@ section#about {
     font-size: 2.4rem;
     text-align: center;
     padding: 2.5rem 0rem;
+}
+.card img{
+    border: 2px solid gainsboro;
 }
 .card-title{
     font-weight: 600;
