@@ -1,0 +1,89 @@
+:root{
+    --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
+}
+*{
+    /* font-family: 'Open Sans', sans-serif; */
+    margin:0; padding:0;
+    box-sizing: border-box;
+    border:none; outline: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+}
+.navbar{
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);    
+}
+
+.navbar .container .navbar-brand{
+    color:#fff;
+    font-size: 1.5rem;
+}
+header #login{
+    font-size: 1.5rem;
+    color:#fff;
+    cursor: pointer;
+}
+header #login:hover{
+    color:#444;
+}
+/* topnavbar  */
+.topnavbar{
+    background-color: #282A35;
+    width: 100%;
+    letter-spacing: 1px;
+    height: 44px;
+    padding-top: 7.5px ;
+   ;
+
+}
+.topnavbar ul li a{
+    width: 52px ;
+    padding: 0px 1rem;
+    
+}
+.topnavbar ul li{
+    display: inline-block;
+  
+}
+.topnavbar ul li a{
+    color: #f1f1f1;
+    font-size: 18px;
+    
+}
+.topnavbar ul li a:hover{
+    color: #f39c12;
+}
+/* sidebar index */
+
+.sidenavbar{
+    width: 20%;
+    height: 100%;
+}
+.leftmenu_inner_inner{
+    height: 100%;
+    width: 100%;
+    background-color: #E7E9EB;
+  
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+}
+.leftmenu_inner_inner a{
+    font-family: sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 2px 1px 1px 16px;
+    color: black;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: crimson;
+    padding: 10px;
+}
+
+.example_code{
+    border: 2px solid skyblue;
+}

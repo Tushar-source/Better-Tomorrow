@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/learn_html.css">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- Jquery Header & topnavbar link -->
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script> 
+         $(function(){
+           $("#header2").load("header2.html"); 
+           $("#topnavbar").load("topnavbar.html"); 
+         });
+     </script> 
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header>
+        <div id="header2"></div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="container-fluid  p-0">
+        <div id="topnavbar"></div>
+        <div class="row g-0">
+            <div class="sidenavbar col-2">
+                <div class="leftmenu_inner_inner">
+                    <div class="title">HTML Tutorial</div>
+                    <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                        <li class="nav-item  role="presentation"> <a href="#intro"  class="nav-link active" data-bs-toggle = "tab">HTML Introduction</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#tags"  class="nav-link " data-bs-toggle = "tab" data-bs-target="#tags"  role="tab" aria-controls="tags" aria-selected="false">HTML Tags</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#structure" class="nav-link " data-bs-toggle = "tab" data-bs-target="#structure"  role="tab" aria-controls="structure" aria-selected="false">HTML Structure</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#head" class="nav-link " data-bs-toggle = "tab" data-bs-target="#head"  role="tab" aria-controls="head" aria-selected="false">HTML Head</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#body" class="nav-link " data-bs-toggle = "tab" data-bs-target="#body"  role="tab" aria-controls="body" aria-selected="false">HTML Body</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#entities" class="nav-link " data-bs-toggle = "tab" data-bs-target="#entities"  role="tab" aria-controls="entities" aria-selected="false">HTML Entities</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#heading" class="nav-link " data-bs-toggle = "tab" data-bs-target="#heading"  role="tab" aria-controls="heading" aria-selected="false">HTML Heading</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#paragraph" class="nav-link " data-bs-toggle = "tab" data-bs-target="#paragraph"  role="tab" aria-controls="paragraph" aria-selected="false">HTML Paragraph</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#line_break" class="nav-link " data-bs-toggle = "tab" data-bs-target="#line_break"  role="tab" aria-controls="line_break" aria-selected="false">HTML Line Break</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#horizontal_rule" class="nav-link " data-bs-toggle = "tab" data-bs-target="#horizontal_rule"  role="tab" aria-controls="horizontal_rule" aria-selected="false">HTML Horizontal Rule</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#forms" class="nav-link " data-bs-toggle = "tab" data-bs-target="#forms"  role="tab" aria-controls="forms" aria-selected="false">HTML Forms</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#meta_tag" class="nav-link " data-bs-toggle = "tab" data-bs-target="#meta_tag"  role="tab" aria-controls="meta_tag" aria-selected="false">HTML Meta Tags</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#style" class="nav-link " data-bs-toggle = "tab" data-bs-target="#style"  role="tab" aria-controls="style" aria-selected="false">HTML Style</a></li>
+                        <!-- <li class="nav-item  role="presentation"> <a href="#script" class="nav-link " data-bs-toggle = "tab" data-bs-target="#script"  role="tab" aria-controls="script" aria-selected="false">HTML Script</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#color" class="nav-link " data-bs-toggle = "tab" data-bs-target="#color"  role="tab" aria-controls="color" aria-selected="false">HTML Color</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#textarea" class="nav-link " data-bs-toggle = "tab" data-bs-target="#textarea"  role="tab" aria-controls="textarea" aria-selected="false">HTML Textarea</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#dropdown" class="nav-link " data-bs-toggle = "tab" data-bs-target="#dropdown"  role="tab" aria-controls="dropdown" aria-selected="false">HTML Dropdown </a></li>
+                        <li class="nav-item  role="presentation"> <a href="#radio" class="nav-link " data-bs-toggle = "tab" data-bs-target="#radio"  role="tab" aria-controls="radio" aria-selected="false">HTML Radio</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#checkbox" class="nav-link " data-bs-toggle = "tab" data-bs-target="#checkbox"  role="tab" aria-controls="checkbox" aria-selected="false">HTML Checkbox</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#fieldset" class="nav-link " data-bs-toggle = "tab" data-bs-target="#fieldset"  role="tab" aria-controls="fieldset" aria-selected="false">HTML Fieldset</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#legends" class="nav-link " data-bs-toggle = "tab" data-bs-target="#legends"  role="tab" aria-controls="legends" aria-selected="false">HTML Legends</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#http" class="nav-link " data-bs-toggle = "tab" data-bs-target="#http"  role="tab" aria-controls="http" aria-selected="false">HTML HTTP</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#request_method" class="nav-link " data-bs-toggle = "tab" data-bs-target="#request_method"  role="tab" aria-controls="request_method" aria-selected="false">HTML Request Method</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#status_code" class="nav-link " data-bs-toggle = "tab" data-bs-target="#status_code  role="tab" aria-controls="status_code" aria-selected="false">HTML Status Code</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#images" class="nav-link " data-bs-toggle = "tab" data-bs-target="#images"  role="tab" aria-controls="images" aria-selected="false">HTML Images</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#anchor" class="nav-link " data-bs-toggle = "tab" data-bs-target="#anchor"  role="tab" aria-controls="anchor" aria-selected="false">HTML Anchor</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#list" class="nav-link " data-bs-toggle = "tab" data-bs-target="#list"  role="tab" aria-controls="list" aria-selected="false">HTML Lists</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#presentation_tags"  class="nav-link " data-bs-toggle = "tab" data-bs-target="#presentation_tags"  role="tab" aria-controls="presentation_tags" aria-selected="false">HTML Presentation Tags</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#table" class="nav-link " data-bs-toggle = "tab" data-bs-target="#table"  role="tab" aria-controls="table" aria-selected="false">HTML Tables</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#span" class="nav-link " data-bs-toggle = "tab" data-bs-target="#span"  role="tab" aria-controls="span" aria-selected="false">HTML Span</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#div" class="nav-link " data-bs-toggle = "tab" data-bs-target="#div"  role="tab" aria-controls="div" aria-selected="false">HTML Div</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#marquee" class="nav-link " data-bs-toggle = "tab" data-bs-target="#marquee"  role="tab" aria-controls="marquee" aria-selected="false">HTML Marquee</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#new_tags" class="nav-link " data-bs-toggle = "tab" data-bs-target="#new_tags"  role="tab" aria-controls="new_tags" aria-selected="false">HTML 5 New Tags</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-5 ms-5 col-8">
+                <div class="tab-pane fade show active" id = "intro">
+                    <div class="content">
+                        <h2>HTML</h2>
+                        <ul>
+                            <li>It standards for Hyper Text Markup Language</li>
+                            <li>It is a standard markup language used to create web pages.</li>
+                        </ul>
+                        <h2> Fetures of HTML</h2>
+                        <ul>
+                            <li>HTML is highly flexible and simple.</li>
+                            <li>HTML is supported on almost every web browser.</li>
+                            <li>HTML is user friendly.</li>
+                        </ul>
+                        <h2>Disadvantages of HTML</h2>
+                        <ul>
+                            <li>It can create only static plain pages.</li>
+                            <li> We need to write a lot of code for making simple page.</li>
+                            <li>Security fetures of HTML are not good.</li>
+                        </ul>
+                        <h2>History Of HTML</h2>
+                        <ul>
+                            <li> 1989	:	GML		Generalised Markup Language</li>
+                            <li>1991	:	SGML	Standard GML</li>
+                            <li>1994	:	HTML</li>
+                            <li>2008	:	HTML 5</li>
+                            <li>2016	:	HTML 5.1</li>
+                        </ul>
+                        <div class="note">
+                            <h5>Note:-</h5>
+                            <p>HTML is completely enclosed in tags</p>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="tab-pane fade show" id = "tags"  role="tabpanel" aria-labelledby="tags">
+                    <div class="content">
+                        <h2>What is Tag ?</h2>
+                        <p>Text palced between '<' and '>' is called as tag.</p>
+                        <p>Eg:- &lt;html&gt;</p>
+                        
+                        <h2>Tags are classified into two types</h2>
+                        <ol>
+                            <li>Paired tags</li>
+                            <li>Non-Paired tags</li>
+                        </ol>
+                        <h4>1. Paired tags</h4>
+                        <p>The tags that have both opening and closing tags are called as paried tags.</p>
+                        <p>Example:
+                            <ul>
+                                <li>&lt;html&gt; ....... &lt;/html&gt;</li>
+                                <li>&lt;body&gt; ....... &lt;/body&gt;</li>
+                            </ul> </p>
+                       
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>The closing tags start with '/'</p>
+                            <h4> 2. Non-Paired</h4>
+                            <ul>
+                                <li>The tags that have only opening tag but no closing tag are called as non-paired tags.</li>
+                                <li> These tags are also called as :
+                                    <ol>
+                                        <li>Self closed tags</li>
+                                        <li>Forcefully closed tags</li>
+                                        <li>Empty tags</li>
+                                        <li>Singular tags</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Example: <ul>
+                                <li>&lt;br&gt; or &lt;br/&gt; <b>Break Tag(Line Break)</b></li>
+                                <li>&lt;hr&gt; or &lt;hr/&gt; <b>Horizontal Rule(h. Line)</b></li>
+                                <li>&lt;img&gt; or &lt;img/&gt; <b>Image Tag</b></li>
+                            </ul>    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "structure"  role="tabpanel" aria-labelledby="structure">
+                    <div class="content">
+                        <h2>Structure of an HTML Document</h2>
+                        <p>An HTML Document is mainly divided into two parts: </p>
+                        <ul>
+                            <li><b>HEAD:</b> This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta Data etc.</li>
+                            <li><b>BODY:</b>  This contains everything you want to display on the Web Page.</li>
+                        </ul>
+                        <p>Let us now have a look at the basic structure of HTML. That is the code that is a must for every webpage to have: </p>
+                        <pre class="example_code">
+                            &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;
+    
+                                            &lt;.title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                    ......
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                        <h2>Working with HTML</h2>
+                        <ul>
+                            <li> Open any text editor for eg notepad, notepad++, sublime text, etc</li>
+                            <li>Save this file with any name and extension '.html' or '.html' <br>
+                                Eg 'index.html'</li>
+                            <li>Run above file in any web browser eg. MS Internet explorer, MS edge, google chrome, MFF, Safari, Opera, UCB, etc</li>
+                        </ul>
+                        <pre class="example_code">
+                            &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;My first web page &lt;.title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                                Hello world
+                                                &lt;h1&gt; Welcome to Fist HTML session &lt;/h1&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>HTML is case insensitive means A and a are same</p>
+                            <!-- <p>Comment:-
+                                - Comments provide additional information about that code.
+                                - Comments are not displayed on web page.
+                                - &lt;!-- This is comment --&gt;</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "head"  role="tabpanel" aria-labelledby="head">
+                    <div class="content">
+                        <h2>Sections in html</h2>
+                        <ol>
+                            <li>Head section</li>
+                            <li>Body section</li>
+                        </ol>
+                        <h2>1. Head</h2>
+                        <ul>
+                            <li>This section contains root element as &lt;head&gt; tag</li>
+                            <li>It is a a pired tag</li>
+                            <li>This tag contain following tags:
+                                <ol>
+                                    <li>&lt;title&gt;  :  Document title</li>
+                                    <li>&lt;link&gt;   :  Link to external document</li>
+                                    <li>&lt;meta&gt;   :  Meta information</li>
+                                    <li>&lt;style&gt;  :  Used for styling</li>
+                                    <li>&lt;script&gt; :  Used to provide script</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h4>&lt;link&gt;</h4>
+                        <p>Attributes:	<b>href, rel, type</b> </p>
+                        <p>Example: Displaing favicon</p>
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p><b>favicon</b>  - it is a graphical image associcated with title of web page. Its size should be 16 x 16 px or 32 x 32 px</p>
+                        </div>
+                        <p>There are Two types of Path in links:</p>
+                        <ol>
+                            <li> <b> Relative Path</b> - A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):</li>
+                            <li><b>Absolute Path</b> - Both examples above are using an absolute URL (a full web address) in the href attribute.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "body"  role="tabpanel" aria-labelledby="body">
+                    <div class="content">
+                        <h2>2. Body</h2>
+                        <ul>
+                            <li>The &lt;body&gt; tag defines the document's body.</li>
+                            <li>The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                        </ul>
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>There can only be one  &lt;body&gt; element in an HTML document.</p>
+                        </div>
+
+                        <h2>Global Attributes</h2>
+                        <p>The &lt;body&gt;  tag also supports the Global Attributes in HTML.</p>
+
+                        <h2>Event Attributes</h2>
+                        <p>The &lt;body&gt; tag also supports the Event Attributes in HTML.</p>
+
+                        <pre class="example_code">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                    &lt;title&gt; Body Example &lt;.title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            &ltlarr;h1&gt;This is Body Sectin Example &ltlarr;/h1&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt; 
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "entities"  role="tabpanel" aria-labelledby="entities">
+                    <div class="content">
+                        <h2>HTML 5 special characters (Entities)</h2>
+                        <ul>
+                            <li>Character entities can be typed as either numbered entity or named entity.</li>
+                            <li>All entities begin with '<b>&</b>' and end with ' <b>;</b>'</li>
+                            <li>For example '<b>&amp;copy&#59;</b> '	'<b>&amp;reg&#59;</b> '	'<b>&amp;trade&#59;</b> ' '<b>&amp;#169&#59;</b> '	'<b>&amp;#174&#59;</b> '	'<b>&amp;#8482&#59;</b> ' etc</li>
+                        </ul>
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>Refer website - <a href="http://www.columbia.edu/kermit/ucs2.html" target="_blank">Click Here </a> </p>
+                        </div>
+                        <br><br>
+                        <h4>For example:</h4>
+                        <pre class="example_code">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                    &lt;title&gt; Special HTML Entities &lt;.title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            &lt;p&gt;'&amp;copy&#59;' - &copy; '&amp;reg&#59;' -	&reg;	'&amp;trade&#59;' - &trade;  &lt;/p&gt;
+                            &lt;p&gt; '&amp;#169&#59;' - &#169;	'&amp;#174&#59;' - &#174;	'&amp;#8482&#59;' - &#8482; <br> 
+                                    '&amp;#2315&#59;' - &#2315; '&amp;#176&#59;' - 20&#176;       &lt;/p&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                        </pre>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "heading"  role="tabpanel" aria-labelledby="heading">
+                    <div class="content">
+                        <h2>HTML Headings</h2>
+                        <ul>
+                            <li>In html there are six heading tags.</li>
+                            <li>All heading tags are paired tags.</li>
+                        </ul>
+                        <table cellpadding="10" cellspacing="10">
+                            <tr>
+                                <th>Attributes &nbsp;&nbsp;&nbsp;</th> 
+                                <th>Parameters</th>
+                            </tr>
+                            <tr>
+                                <td>align</td>
+                                <td>left, center, right</td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <h4>For example:</h4>
+                        <pre class="example_code">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                    &lt;title&gt;HTML Heading Example&lt;.title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;This is Heading 1 &lt;/h1&gt;
+                                &lt;h2&gt;This is Heading 2&lt;/h2&gt;
+                                &lt;h3&gt;This is Heading 3&lt;/h3&gt;
+                                &lt;h4&gt;This is Heading 4&lt;/h4&gt;
+                                &lt;h5&gt;This is Heading 5&lt;/h5&gt;
+                                &lt;h6&gt;This is Heading 6&lt;/h6&gt;
+
+                            &lt;/body&gt;
+                        &lt;/html&gt;  
+                        </pre>
+                        <hr>
+                        <h4>For example:</h4>
+                        <pre class="example_code">
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                        &lt;title&gt;HTML Heading Example&lt;.title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;This is Heading 1 &lt;/h1&gt;
+                                    &lt;h2 align = "center"&gt;This is Heading 2&lt;/h2&gt;
+                                    &lt;h3 align = "right"&gt;This is Heading 3&lt;/h3&gt;
+                                    &lt;h4&gt;This is Heading 4&lt;/h4&gt;
+                                    &lt;h5 align = "center"&gt;This is Heading 5&lt;/h5&gt;
+                                    &lt;h6 align = "right"&gt;This is Heading 6&lt;/h6&gt;
+    
+                                &lt;/body&gt;
+                            &lt;/html&gt;  
+                         </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "paragraph"  role="tabpanel" aria-labelledby="paragraph">
+                    <div class="content">
+                        <h2>HTML Paragraphs</h2>
+                        <ul>
+                            <li>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</li>
+                            <li>It is used to divide text into different paragraphs</li>
+                            <li>It is a paired tag</li>
+                        </ul>
+                        <table cellpadding="10" cellspacing="10">
+                            <tr>
+                                <th>Attributes &nbsp;&nbsp;&nbsp;</th> 
+                                <th>Parameters</th>
+                            </tr>
+                            <tr>
+                                <td>align</td>
+                                <td>left, center, right, justify</td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <h4>For Example:</h4>
+                        <pre class="example_code">
+                        &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;HTML Paragraph&lt;.title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                    &lt;p&gt; This is a paragraph.&lt;/p&gt;
+                                    &lt;p&gt; This is a another paragraph.&lt;/p&gt;
+                                    &lt;/body&gt;
+                        &lt;/html&gt;
+                        </pre>
+                        <hr>
+                        <pre class="example_code">
+                            &lt;html&gt;
+                                        &lt;head&gt;
+                                                &lt;title&gt;HTML Paragraph&lt;.title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        &lt;p&gt; 
+                                        This paragraph
+                                        contains         a lot of spaces
+                                        in the source         code,
+                                        but the        browser
+                                        ignores it
+                                        &lt;/p&gt;
+                                        &lt;/body&gt;
+                            &lt;/html&gt;
+                            </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "line_break"  role="tabpanel" aria-labelledby="line_break">
+                    <div class="content">
+                        <h2>HTML line breaks(&lt;br/&gt; tag)</h2>
+                        <ul>
+                            <li>br stands for breaks</li>
+                            <li>It is used to break a line and shift following text to next line.</li>
+                            <li>It is a non paired tag</li>
+                        </ul>
+                        <br><br>
+                        <h4>For Example:</h4>
+                        <pre class="example_code">
+                        &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;HTML Paragraph&lt;.title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                    &lt;p&gt; This is a &lt;br&gt; paragraph  with a line break.&lt;/p&gt;
+                                    &lt;/body&gt;
+                        &lt;/html&gt;
+                        </pre>
+
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>
+                                <b><h4>Non breaking space	-> &amp;nbsp&#59;</h4></b>
+                                <ul>
+                                    <li>It is used to insert more than one spaces.</li>
+                                    <li>It is special character entity.</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "horizontal_rule"  role="tabpanel" aria-labelledby="horizontal_rule">
+                    <div class="content">
+                        <h2>HTML Horizontal rule(&lt;hr/&gt; tag)</h2>
+                        <ul>
+                            <li>This tag is used to draw a line across the web page.</li>
+                            <li>It is a non paired tag.</li>
+                        </ul>
+                        <table cellpadding="10" cellspacing="10">
+                            <tr>
+                                <th>Attributes &nbsp;&nbsp;&nbsp;</th> 
+                                <th>Parameters</th>
+                            </tr>
+                            <tr>
+                                <td>color</td>
+                                <td>color name / code</td>
+                            </tr>
+                            <tr>
+                                <td>size</td>
+                                <td>px</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>% / px</td>
+                            </tr>
+                            <tr>
+                                <td>align</td>
+                                <td>left,right,center</td>
+                            </tr>
+                            <tr>
+                                <td>noshade</td>
+                                <td>noshade</td>
+                            </tr>   
+                        </table>
+                        <br><br>
+                        <h4>For Example:</h4>
+                        <pre class="example_code">
+                            &lt;!doctype html &gt;
+                            &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;Horizontal Rule&lt;.title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;h1&gt; Welcome to Web development &lt;/h1&gt;
+                                        &lt;hr&gt;
+                                        &lt;h2&gt; We can develop static and dynamic web pages &lt;/h2&gt;
+                                        &lt;hr/&gt;
+                                        &lt;hr size = "5px"&gt;
+                                        &lt;hr size = "20px"&gt;
+                                        &lt;hr size = "80px"&gt;
+                                        &lt;hr size = "20px" width = "1000px" align = "left"&gt;
+                                        &lt;hr size = "20px" width = "50%" align = "left"&gt;
+                                        &lt;hr size = "20px" color = "green"&gt;
+                                        &lt;hr size = "20px" color = "blue"&gt;
+                                        &lt;hr size = "20px" color = "red" noshade = "noshade"&gt;
+                                        &lt;hr size = "20px" color = "magenta"&gt;
+                                        &lt;hr  size = "20px" width = "50%" noshade = "noshade"&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "forms"  role="tabpanel" aria-labelledby="forms">
+                    <div class="content">
+                        <h2>HTML Forms</h2>
+                        <ul>
+                            <li>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</li>
+                            <li>It is a paired tag.</li>
+                        </ul>
+                        <h4>Form Attributes</h4>
+                        <ul>
+                            <li>method</li>
+                            <li>action</li>
+                            <li>target</li>
+                            <li>encrypt</li>
+                        </ul>
+                        <h2>The &lt;input&gt;Element</h2>
+                        <ul>
+                            <li>The HTML &lt;input&gt; element is the most used form element.</li>
+                            <li>An &lt;input&gt; element can be displayed in many ways, depending on the  attribute.</li>
+                            <li>Here are some examples</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <th>Attributes &nbsp;&nbsp;&nbsp;</th> 
+                                <th>Parameters</th>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>any name</td>
+                            </tr>
+                            <tr>
+                                <td>value</td>
+                                <td>any value</td>
+                            </tr>
+                            <tr>
+                                <td>size</td>
+                                <td>pix</td>
+                            </tr>
+                            <tr>
+                                <td>maxlength</td>
+                                <td>number</td>
+                            </tr>
+                            <tr>
+                                <td>rows</td>
+                                <td>number</td>
+                            </tr>
+                            <tr>
+                                <td>cols</td>
+                                <td>number</td>
+                            </tr>
+                            <tr>
+                                <td>readonly</td>
+                                <td>true / false</td>
+                            </tr>
+                            <tr>
+                                <td>disabled</td>
+                                <td>disabled</td>
+                            </tr>
+                            <tr>
+                                <td>checked</td>
+                                <td>checked</td>
+                            </tr>
+                            <tr>
+                                <td>multiple</td>
+                                <td>true/false</td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <h4>For Example:</h4>
+                        <pre class="example_code">
+                            &lt;form&gt;
+                                &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+                                &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="text" id="lname" name="lname" &gt;
+                              &lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "meta_tag"  role="tabpanel" aria-labelledby="meta_tag">
+                    <div class="content">
+                        <h2>HTML Meta &lt;meta/&gt; Tag</h2>
+                        <ul>
+                            <li>Metadata is data about data.</li>
+                            <li>&lt;meta/&gt; tag provides metadata about html document.</li>
+                            <li>Metadata is not displayed on web page but it can be machine parsable (understandable).</li>
+                            <li>meta attributes
+                                <ol>
+                                    <li>meta keywords</li>
+                                    <li>meta description</li>
+                                    <li>meta author</li>
+                                    <li>meta title</li>
+                                    <li>meta charset</li>
+                                    <li>meta viewport</li>
+                                </ol>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "style"  role="tabpanel" aria-labelledby="style">
+                    <div class="content">'
+                        <h2>HTML Style &lt;style&gt; Guide </h2>
+                        <ul>
+                            <li>It is used to apply styles to html documents</li>
+                            <li>It is a paired tag</li>
+                        </ul>
+                        <br><br>
+                        <h4>For Example</h4>
+                        <pre class="example_code">
+                            &lt;!doctype html &gt;
+                            &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gtStyling Example;&lt;.title&gt;
+                                            &lt;style&gt;
+                                                p{
+                                                    color:red;
+				                                    font-family : roboto,candara;
+				                                    font-size : 50px;	
+                                                }
+                                            &lt;/style&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                                &lt;p&gt;Welcome to Styling &lt;/p&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id = "body"  role="tabpanel" aria-labelledby="body"></div>
+                <div class="tab-pane fade show" id = "body"  role="tabpanel" aria-labelledby="body"></div>
+
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
+</div>

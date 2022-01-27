@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn BOOTSTRAP</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/learn_CSS2.css">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+     <!-- Jquery Header & topnavbar link -->
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script> 
+         $(function(){
+           $("#header2").load("header2.html"); 
+           $("#topnavbar").load("topnavbar.html"); 
+         });
+     </script> 
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <header>
+        <div id="header2"></div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="container-fluid p-0">
+        <div id="topnavbar"></div>
+        <div class="row gx-0">
+            <div class="sidenavbar  col-2">
+                <div class="leftmenu_inner_inner">
+                    <div class="title">BootStrap Tutorial</div>
+                    <ul class="nav nav-tabs flex-column"  id="myTab" role="tablist">
+                        <li class="nav-item  role="presentation"> <a href="#intro"  class="nav-link active" data-bs-toggle = "tab">BS Introduction</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#color"  class="nav-link" data-bs-toggle = "tab">BS Colors</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#list"  class="nav-link" data-bs-toggle = "tab">BS List</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li>
+                        <li class="nav-item  role="presentation"> <a href="#"  class="nav-link" data-bs-toggle = "tab"></a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-5 ms-5  col-8">
+                <div class="tab-pane fade show active" id = "intro">
+                    <div class="content">
+                        <h2>Bootstrap</h2>
+                        <ul>
+                            <li>Bootstrap is opensource framework of CSS.</li>
+                            <li>It helps in desiging responsive and device friendly web pages.(RWD - responsive web design)</li>
+                            <li>Bootstrap includes CSS and optional scripting (javascript) templates.</li>
+                            <li>This framework helps in faster web development.</li>
+                        </ul>
+                        <br>
+                        <h2>History</h2>
+                        <ul>
+                            <li>Bootstrap was developed by Mark otto and Jacob Thornton at Twitter in Aug 2011.</li>
+                            <li>Bootstrap 2.x was released on 31st Jan 2012, with builtin support for Glyficons.</li>
+                            <li>v2.x  onwords support for RWD.</li>
+                            <li>Bootstrap 3 was released on 19th Aug 2013.</li>
+                            <li>It focused on mobile first approach.</li>
+                            <li>Bootstrap 4 was announced on 29th october 2014 and stable release was on 18 Jan 2018.</li>
+                            <li>Stable version is 4.5</li>
+                            <li>Bootstrap 5 <ul>
+                                <li>alpha version : 16th Jun 2020</li>
+                                <li>beta 1	:     7th Dec 2020</li>
+                                <li>beta 2	:	 10th Feb 2021</li>
+                                <li> v5		:    5th May 2021</li>
+                                <li>v5.1.0  :		 4th Aug 2021</li>
+                                <li>Latest 5.1.3 : 9th October 2021</li>
+                            </ul></li>
+
+                            <li>Official Website:- https://getbootstrap.com/</li>
+                        </ul>
+                        <div class="note">
+                            <h5>Note:</h5>
+                            <p>CDN:- Content Delivery Network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "color" role="tabpanel" aria-labelledby="color">
+                    <div class="content">
+                        <h2>Bootstrap Colors</h2>
+                        <p> Bootstrap supports following colors </p>
+                            <ul>
+                                <li>primary</li>
+                                <li>secondary</li>
+                                <li>success</li>
+                                <li>danger</li>
+                                <li>warning</li>
+                                <li>info</li>
+                                <li>dark</li>
+                                <li>light</li>
+                                <li>white</li>
+                                <li>black</li>
+                                <li>white-50</li>
+                                <li>black-50</li>
+                            </ul>
+                            <br>
+                            <h4><b>For Example</b></h4>
+                        <pre class="example_code">
+                            &lt;p class="h1 text-primary bg-warning"&gt;This is Primary Color&lt;/p&gt;        
+                            &lt;p class="h1 text-secondary bg-danger"&gt;This is Secondary Color&lt;/p&gt;
+                            &lt;p class="h1 text-success bg-info"&gt;This is Success color&lt;/p&gt;
+                            &lt;p class="h1 text-warning bg-dark"&gt;This is Warning Color&lt;/p&gt;
+                            &lt;p class="h1 text-danger bg-light"&gt;This is Danger color&lt;/p&gt;
+                            &lt;p class="h1 text-info bg-white"&gt;This is Info color&lt;/p&gt;
+                            &lt;p class="h1 text-dark bg-black"&gt;This is dark color&lt;/p&gt;
+                            &lt;p class="h1 text-light bg-white-50"&gt;This is light color&lt;/p&gt;
+                            &lt;p class="h1 text-white bg-dark-50"&gt;This is white color&lt;/p&gt;
+                    
+                            &lt;p class="h1 text-black bg-primary"&gt;This is black color&lt;/p&gt;
+                            &lt;p class="h1 text-white-50 bg-secondary"&gt;This is 50% white color&lt;/p&gt;
+                            &lt;p class="h1 text-black-50 bg-success"&gt;This is 50% black color&lt;/p&gt;
+                        </pre>
+                        <br>
+                        <div class="note">
+                            <h4>Note:</h4>
+                            <p>Mark text as important:- use class "<b>.lead</b>"</p>
+                            <p>Mark text as Unimportant:- use class "<b>.muted</b>"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "list" role="tabpanel" aria-labelledby="list">
+                    <div class="content">
+                        <h2>Bootstrap Lists</h2>
+                        <p>List</p>
+                        <ul>
+                            <li>list-group</li>
+                            <li>list-group-item</li>
+                            <li>list-group-item-action -> clickable</li>
+                            <li>list-group-item-*...* -> colors</li>
+                            <li>list-group-horizontal</li>
+                            <li>active</li>
+                        </ul>
+                        <p>To create a basic list group, use an &lt;ul&gt; element with class '.list-group', and &lt;li&gt; elements with class '.list-group-item'</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

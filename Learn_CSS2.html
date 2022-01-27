@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/learn_CSS2.css">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+     <!-- Jquery Header & topnavbar link -->
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script> 
+         $(function(){
+           $("#header2").load("header2.html"); 
+           $("#topnavbar").load("topnavbar.html"); 
+         });
+     </script> 
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <header>
+        <div id="header2"></div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="container-fluid p-0">
+        <div id="topnavbar"></div>
+        <div class="row g-0">
+            <div class="sidenavbar col-2">
+                <div class="leftmenu_inner_inner">
+                    <div class="title">CSS Tutorial</div>
+                    <ul class="nav nav-tabs flex-column"  id="myTab" role="tablist">
+                        <li class="nav-item  role="presentation"> <a href="#intro"  class="nav-link active" data-bs-toggle = "tab">CSS Introduction</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#types"  class="nav-link" data-bs-toggle = "tab">CSS Types</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#syntax"  class="nav-link" data-bs-toggle = "tab">CSS Syntax</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#selector"  class="nav-link" data-bs-toggle = "tab">CSS Selectors</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#fonts"  class="nav-link" data-bs-toggle = "tab">CSS Fonts</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#background"  class="nav-link" data-bs-toggle = "tab">CSS Background</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#gradient"  class="nav-link" data-bs-toggle = "tab">CSS Gradient</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#text_transformation"  class="nav-link" data-bs-toggle = "tab">CSS Text Transformation</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#spacing"  class="nav-link" data-bs-toggle = "tab">CSS Spacing</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#border"  class="nav-link" data-bs-toggle = "tab">CSS Border</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#outline"  class="nav-link" data-bs-toggle = "tab">CSS Outline</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#margin"  class="nav-link" data-bs-toggle = "tab">CSS Margin</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#padding"  class="nav-link" data-bs-toggle = "tab">CSS Padding</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#links"  class="nav-link" data-bs-toggle = "tab">CSS Links</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#display"  class="nav-link" data-bs-toggle = "tab">CSS Display</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#lists"  class="nav-link" data-bs-toggle = "tab">CSS Lists</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#float"  class="nav-link" data-bs-toggle = "tab">CSS Float</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#z_index"  class="nav-link" data-bs-toggle = "tab">CSS z-index</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#position"  class="nav-link" data-bs-toggle = "tab">CSS Position & Input</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#vcs"  class="nav-link" data-bs-toggle = "tab">VCS</a></li>
+                        <li class="nav-item  role="presentation"> <a href="#trial_hosting"  class="nav-link" data-bs-toggle = "tab">Trial Hosting</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-5 ms-5 col-8">
+                <div class="tab-pane fade show active" id = "intro">
+                    <div class="content">
+                        <h2>CSS</h2>
+                        <ul>
+                            <li>CSS stands for Cascading Stylesheet.</li>
+                            <li>It is a stylesheet language used for describing the presentation of document written in a markup language like HTML.</li>
+                            <li>CSS is a cornerstone technology for world wide web alongside HTML and Javascipt.</li>
+                            <li>CSS is designed to enable separation of presentation and contents.</li>
+                            <li>All styles are stored in CSS files.</li>
+                            <li>CSS files must have extension as '.css' only.</li>
+                        </ul>
+                        <br><br>
+                        <h2>WHY CSS?</h2>
+                        <ul>
+                            <li>It allows much ritcher presentation appearence.</li>
+                            <li>It reduces workload by centrallizing commands for visual appearence instead of scatterd ones.</li>
+                            <li>Same styles can be reused for multiple documents.</li>
+                        </ul>
+                        <br><br>
+                        <h2>History</h2>
+                        <ul>
+                            <li>First version of css was released in 1996.</li>
+                            <li>Second version of css was released in 1998, with improved table fetures.</li>
+                            <li>Third version of css was released in 2008 and currently in use with improved support for modules,it also supports modern browsers.</li>
+                            <li>Fourth version was released in 24th march 2017,which is faster than css3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "types" role="tabpanel" aria-labelledby="types">
+                    <div class="content">
+                        <h2>Types of CSS</h2>
+                        <br>
+                        <ol>
+                            <li><b>Inline CSS</b>- &nbsp; Highest Priority, can be applied to only that tag</li>
+                            <br>
+                            <li><b>Internal CSS</b>- &nbsp; Medium priority, can be applied to only that document</li>
+                            <br>
+                            <li><b>External CSS</b>- &nbsp;Lowest priority, can be applied globally</li>
+                        </ol>
+                        <br><br>
+                        <pre class="example_code">
+                            &lt;!doctype html &gt;
+                            &lt;html&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;External Css&lt;.title&gt;
+                                            &lt;link rel = "stylesheet" type = "text/css" href="style.css" &gt;  '&#x2f;&#x2f;External CSS' 
+                                            &lt;style&gt;  '&#x2f;&#x2f;Internal CSS' 
+                                            p
+                                            {
+                                                font-size: 25px;
+                                                font-family: 'Courier New', Courier, monospace;
+                                            }
+                                            &lt;/style&gt;
+                                    &lt;/head&gt;
+                                    &lt;body style="background-color: green;&gt; '&#x2f;&#x2f;Inline CSS' 
+                                    &lt;p&gt;This is Types of CSS&lt;/p&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "syntax" role="tabpanel" aria-labelledby="syntax">
+                    <div class="content">
+                        <h2>CSS syntax (rule-set)</h2>
+                        <ul>
+                            <li>CSS syntax is selector and declaration block.</li>
+                            <li>The selector points to the html element you want to style.</li>
+                            <li>Each declaration includes CSS property and value pair.</li>
+                            <li>Propertes and values are separated by colon(:)</li>
+                            <li>Each property and value separated by semicolon(;)</li>
+                        </ul>
+                        <br><br>
+                        <h4>For Example</h4>
+                        <pre class="example_code">
+                            h1
+                            {
+                                color : red;
+                                font-size : 12px;
+                            }
+                            where, h1 is a selector color is property red is value <br> font-size is property 12px is value                    
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "selector" role="tabpanel" aria-labelledby="selector">
+                    <div class="content">
+                        <h2>CSS Selectors</h2>
+                        <ul>
+                            <li>CSS selectors are used to select the contents you want to style.</li>
+                            <li>Types- 
+                                <ol>
+                                    <li>Element selector</li>
+                                    <li>Id selector</li>
+                                    <li>Class selector</li>
+                                    <li>Universal selector</li>
+                                    <li>Group selector</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <br>
+                        <h4>1. Element Selector</h4>
+                        <ul>
+                            <li>The element selector selects the html element by name.</li>
+                        </ul>
+                        <br>
+                        <h5><b>Syntax:</b></h5> 
+                        <pre class="example_code">
+                            element
+                            {
+                                style1;
+                                style2;
+                                ...
+                            }
+                        </pre> 
+                        <h4>2. Id Selector</h4>
+                        <ul>
+                            <li>It uses id attribute of html element.</li>
+                            <li>To select a selector with specific id (#) is used.</li>
+                        </ul>
+                        <br>
+                        <h5><b>Syntax:</b></h5>
+                        <pre class="example_code">
+                            
+                            #id
+                            {
+                                style1;
+                                style2;
+                                ...
+                            }                               
+                        </pre>   
+                        <h4>3. Class Selector</h4>
+                        <ul>
+                            <li>The class selector selects html elements with specific class attribute.</li>
+                            <li>It is used with a "period" symbol (. DOT) followed by class name.</li>
+                        </ul>
+                        <br>
+                        <h5><b>Syntax:</b></h5>
+                        <pre class="example_code">
+                            
+                            . class_name
+                            {
+                                style1;
+                                style2;
+                                ...
+                            }              
+                        </pre>   
+                        <h4>4.  Universal Selector</h4>
+                        <ul>
+                            <li>The universal selector is used as wildcard selector.</li>
+                            <li>It selects all elements in page.</li>
+                            <li>It is denoted by '*' symbol</li>
+                        </ul>
+                        <br>
+                        <h5><b>Syntax:</b></h5>
+                        <pre class="example_code">
+                            
+                            *
+                            {
+                                style1;
+                                style2;
+                                ...
+                            }              
+                        </pre>   
+                        <h4>5. Group selector</h4>
+                        <ul>
+                            <li>Group selector is used to select all elements with same style definition</li>
+                            <li>commas are used to separate selectors in grouping.</li>
+                        </ul>
+                        <br>
+                        <h5><b>Syntax:</b></h5>
+                        <pre class="example_code">
+                            
+                            selector1, selector2,selector3....
+                            {
+                                style1;
+                                style2;
+                                ...
+                            }              
+                        </pre> 
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "fonts" role="tabpanel" aria-labelledby="fonts">
+                    <div class="content">
+                        <h2>CSS Fonts</h2>
+                        <ul>
+                            <li>font-family property selects fonts</li>
+                            <li>fonts are arraged as priorities.</li>
+                        </ul>
+                        <h6>For Example</h6>
+                        <p>font-family: 'Century Gothic','Kunstler Script';</p>
+                        <br><br>
+                        <h5><b>font-style</b></h5>
+                        <ul>
+                            <li>normal</li>
+                            <li>italic</li>
+                            <li>oblique</li>
+                        </ul>
+                        <br><br>
+                        <h5><b>font-weight</b></h5>
+                        <ul>
+                            <li>normal</li>
+                            <li>bold</li>
+                            <li>number(0-900)</li>
+                        </ul>
+                        <br><br>
+                        <h5><b>font-varient</b></h5>
+                        <ul>
+                            <li>normal</li>
+                            <li>small-caps
+                                <ul>
+                                    <li>small to capital</li>
+                                    <li>capital to big</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br><br>
+                        <h5><b>font-size</b></h5>
+                        <ul>
+                            <li>px</li>
+                            <li>em</li>
+                            <li>rem</li>
+                            <li>vh - viewport width - responsive</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "background" role="tabpanel" aria-labelledby="background">
+                    <div class="content">
+                        <h2>CSS Background</h2>
+                        <p>The CSS background properties are used to add background effects for elements.</p>
+                        <h5><b>background-color</b></h5>
+                        <p>background-color specifies background color of element</p>
+                        <p>For Example: &lt;h1 style="background-color: rgb(0,0,255);"&gt; I am heading 1&lt;/h1&gt;</p>
+                        <br><br>
+                        <h5><b>background-image</b></h5>
+                        <p>background-image adds image to background</p>
+                        <p><b>Syntax:</b> background-image : url();</p>
+                        <br><br>
+                        <h5><b>background-repeat</b></h5>
+                        <p>background-repeat repeats images either in horizontal direction, or in vertical direction, or no repeat.</p>
+                        <p>
+                            background-repeat	: <ul>
+                                <li>repeat-x</li>
+                                <li>repeat-y</li>
+                                <li>no-repeat</li>
+                            </ul>
+                        </p>
+                        <br><br>
+                        <h5><b>background-position</b></h5>
+                        <p>background-position:</p>
+                        <ul>
+                            <li>top</li>
+                            <li>bottom</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                        <p>For Example: background-position : right top;</p>
+                        <br><br>
+                        <h5><b>background-attachment</b></h5>
+                        <p>The background-attachment specifies image should be fixed or scrolling</p>
+                        <p>background-attachment:
+                            <ul>
+                                <li>fixed <p>- not fixed with page</p></li>
+                                <li>scroll <p>- fixed with page</p></li>
+                            </ul>
+                        </p>
+                        <br><br>
+                        <h5><b>background-size</b></h5>
+                        <p>background-size specifies size of background</p>
+                        <p>background-size : <ul>
+                            <li>contain;</li>
+                            <li>cover;</li>
+                            <li>size(number);</li>
+                        </ul></p>
+                    </div>
+                </div>
+                <div class="tab-pane fade show " id = "gradient" role="tabpanel" aria-labelledby="gradient">
+                    <div class="content">
+                        <h2>CSS Gradient Backgrounds</h2>
+                        <p>There are two types of Gradient</p>
+                        <ol>
+                            <li>Linear Gradient</li>
+                            <li>Radial Gradient</li>
+                        </ol>
+                        <div class="note">
+                            <h5>Note:-</h5>
+                            <p>minimum 2 color stops required</p>
+                        </div>
+                        <h4><b>1. Linear gradient</b></h4>
+                        <h5><b>Syntax</b></h5>
+                        <pre class="example_code ">
+                            background : linear-gradient(direction/degree, color_stop1, color_stop2, ...)
+                        </pre>
+                        <p>where direction:
+                            <ul>
+                                <li>to top</li>
+                                <li>to bottom</li>
+                                <li>to left</li>
+                                <li>to right bottom</li>
+                                ......
+                            </ul>
+                            degree
+                            <ul>
+                                <li>90deg</li>
+                                <li>180deg</li>
+                                <li>-90deg</li>
+                            </ul>
+                        </p>
+                        <br>
+                        <h4><b>2. Radial Gradient</b></h4>
+                        <h5><b>Syntax</b></h5>
+                        <pre class="example_code ">
+                            background : radial-gradient(shape, color_stop1, color_stop2, ...)
+                        </pre>
+                        <p>where shape: <ul>
+                            <li>circle</li>
+                            <li>ellipse</li>
+                        </ul></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
